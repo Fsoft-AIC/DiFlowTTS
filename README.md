@@ -23,3 +23,15 @@
 
 ## 📦 Code Release
 The official code will be released soon. Stay tuned!
+
+## 📝 Citation
+If you find this work useful, please cite:
+```bibtex
+@article{diflowtts,
+      title={DiFlow-TTS: Compact and Low-Latency Zero-Shot Text-to-Speech with Discrete Flow Matching}, 
+      author={Ngoc-Son Nguyen and Thanh V. T. Tran and Hieu-Nghia Huynh-Nguyen and Truong-Son Hy and Van Nguyen},
+      journal = {Interspeech 2026},
+      year={2026},
+      url={https://arxiv.org/abs/2509.09631}, 
+}
+```
