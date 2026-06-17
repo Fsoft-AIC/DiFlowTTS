@@ -12,12 +12,13 @@
 
 <sup>†</sup> Corresponding author
 
+<a href='https://interspeech2026.org/en-AU'><img src='https://img.shields.io/badge/Interspeech%202026-Long%20Paper%20Track-0066CC'></a>
 <a href='https://arxiv.org/abs/2509.09631'><img src='https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white'></a>
 </div>
 
    
 
-## 🎬 Framework
+## 🔊 Framework
 
   ![DiFlowDubber Framework](assets/diflowtts.png)
 
