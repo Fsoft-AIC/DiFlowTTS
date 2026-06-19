@@ -14,6 +14,7 @@
 
 <a href='https://interspeech2026.org/en-AU'><img src='https://img.shields.io/badge/Interspeech%202026-Long%20Paper%20Track-0066CC'></a>
 <a href='https://arxiv.org/abs/2509.09631'><img src='https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white'></a>
+<a href='https://fsoft-aic.github.io/SonNN45-Demo/projects/diflowtts/'><img src='https://img.shields.io/badge/%F0%9F%8C%90_Demo-Page-orange'></a>
 </div>
 
    
@@ -22,8 +23,53 @@
 
   ![DiFlowDubber Framework](assets/diflowtts.png)
 
-## 📦 Code Release
-The official code will be released soon. Stay tuned!
+## 🛠️ Dependencies & Installation
+
+### 1. Set Up the Environment
+
+Install the required dependencies using Conda:
+
+```bash
+conda env create -f environment.yaml
+conda activate diflow
+```
+### 2. Download Models
+- Download the pretrained FACodec model from [HuggingFace](https://huggingface.co/amphion/naturalspeech3_facodec), and place the checkpoint files in the following structure:
+```
+root/
+└── models/
+    └── facodec/
+        └── checkpoints/
+            ├── ns3_facodec_encoder.bin
+            └── ns3_facodec_decoder.bin
+
+```
+- Download the DiFlow-TTS model checkpoint from [Link](https://drive.google.com), and place it as follows:
+```
+root/
+└── ckpts/
+    └── diflow-tts.ckpt
+```
+## 🚀 Quick Inference
+
+To synthesize a sample with DiFlow-TTS, follow these steps:
+
+1. Open the script: [`scripts/synth_one_sample.sh`](scripts/synth_one_sample.sh)
+
+2. Edit the following lines:
+
+   * **Line 3**: Set the path to the DiFlow-TTS checkpoint.
+   * **Line 4**: Set your input text.
+   * **Line 5**: Set the path to your reference speech prompt.
+
+3. Run the script with:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 bash scripts/synth_one_sample.sh
+```
+
+## 🏋️‍♂️ Training
+Coming soon!
 
 ## 📝 Citation
 If you find this work useful, please cite:
