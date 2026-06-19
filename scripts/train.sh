@@ -1,6 +1,6 @@
 python train_diflow_tts.py \
-    --config-path configs/model.yaml \
-    --exp-root experiments/ \
-    --project-name diflow-tts \
-    --run-name default_run \
-    --logging-method wandb \
+    --config_path configs/model.yaml \
+    --exp_root experiments/ \
+    --project_name diflow-tts \
+    --run_name default_run \
+    --logging_method wandb \

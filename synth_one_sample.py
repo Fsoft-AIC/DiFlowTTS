@@ -5,13 +5,13 @@ import argparse
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Synthesize one sample")
-    parser.add_argument("--config-path", required=True, help="path to configuration file.")
-    parser.add_argument("--ckpt-path", required=True, help="path to checkpoint")
+    parser.add_argument("--config_path", required=True, help="path to configuration file.")
+    parser.add_argument("--ckpt_path", required=True, help="path to checkpoint")
     parser.add_argument("--text", type=str, required=True, help="Text to synthesize")
-    parser.add_argument("--prompt-path", type=str, default=None, help="Path to reference audio for prompt")
-    parser.add_argument("--prompt-duration", type=float, default=None, help="Duration of the prompt in seconds")
+    parser.add_argument("--prompt_path", type=str, default=None, help="Path to reference audio for prompt")
+    parser.add_argument("--prompt_duration", type=float, default=None, help="Duration of the prompt in seconds")
     parser.add_argument("--device", type=str, default="cpu", help="Device to run the model on")
-    parser.add_argument("--n-timesteps", type=int, default=128, help="Number of timesteps for synthesis")
+    parser.add_argument("--n_timesteps", type=int, default=128, help="Number of timesteps for synthesis")
     args = parser.parse_args()
     return args
 

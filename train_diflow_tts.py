@@ -9,13 +9,13 @@ import os
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Training")
-    parser.add_argument("--config-path", required=True, help="path to configuration file.")
-    parser.add_argument("--exp-root", type=str, default=None, help="Root directory for experiments")
-    parser.add_argument("--project-name", type=str, default=None, help="Project name")
-    parser.add_argument("--run-name", type=str, default="default_run", help="Run name for logging")
-    parser.add_argument("--wandb-id", type=str, default=None, help="Wandb id")
-    parser.add_argument("--logging-method", type=str, default="tensorboard", help="Logging method")
-    parser.add_argument("--ckpt-path", type=str, default=None, help="path to checkpoint")
+    parser.add_argument("--config_path", required=True, help="path to configuration file.")
+    parser.add_argument("--exp_root", type=str, default=None, help="Root directory for experiments")
+    parser.add_argument("--project_name", type=str, default=None, help="Project name")
+    parser.add_argument("--run_name", type=str, default="default_run", help="Run name for logging")
+    parser.add_argument("--wandb_id", type=str, default=None, help="Wandb id")
+    parser.add_argument("--logging_method", type=str, default="tensorboard", help="Logging method")
+    parser.add_argument("--ckpt_path", type=str, default=None, help="path to checkpoint")
     args = parser.parse_args()
     return args
 

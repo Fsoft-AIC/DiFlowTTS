@@ -53,7 +53,7 @@ root/
 ## 🚀 Quick Inference
 
 > [!NOTE]
-> DiFlow-TTS is trained on 470 hours of the LibriTTS dataset, which consists of emotionally neutral speech. As a result, it may not perform well on prompts with strong emotional expression.
+> DiFlow-TTS is trained on 470 hours of the LibriTTS dataset, which consists of **predominantly neutral speech**. As a result, **it may not perform well on prompts with strong emotional expression**.
 
 To synthesize a sample with DiFlow-TTS, follow these steps:
 
