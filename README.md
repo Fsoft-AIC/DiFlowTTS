@@ -34,7 +34,7 @@ conda env create -f environment.yaml
 conda activate diflow
 ```
 ### 2. Download Models
-- Download the pretrained FACodec model from [HuggingFace](https://huggingface.co/amphion/naturalspeech3_facodec), and place the checkpoint files in the following structure:
+- Download the pre-trained FACodec model from [HuggingFace](https://huggingface.co/amphion/naturalspeech3_facodec), and place the checkpoint files in the following structure:
 ```
 root/
 └── models/
@@ -51,6 +51,9 @@ root/
     └── diflow-tts.ckpt
 ```
 ## 🚀 Quick Inference
+
+> [!NOTE]
+> DiFlow-TTS is trained on 470 hours of the LibriTTS dataset, which consists of emotionally neutral speech. As a result, it may not perform well on prompts with strong emotional expression.
 
 To synthesize a sample with DiFlow-TTS, follow these steps:
 
